@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phuket Hotel &amp; Real Estate Transaction Database | JOE COLLECTION</title>
+<style>
+:root{--bg:#f8f6f1;--bg-soft:#f1ebdb;--card:#fff;--border:rgba(21,36,26,.12);--border-soft:rgba(21,36,26,.07);--forest:#0c2a20;--forest-mid:#15402f;--ivory:#182219;--platinum:#4a5449;--slate:#7c8579;--onDark:#f4f1e8;--onDark-mid:#c6d6cb;--gold:#b8863a;--gold-light:#93691c;--gold-onDark:#e3c479;--teal:#166a52;--green:#1a7a52;--green-light:#0c7a48;--red-flag:#b23a24;}
+*{box-sizing:border-box;margin:0;padding:0;min-width:0;}
+html{overflow-x:hidden;width:100%;max-width:100vw;}
+body{overflow-x:hidden;width:100%;max-width:100vw;overflow-wrap:break-word;word-break:break-word;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ivory);line-height:1.6;}
+a{color:inherit;overflow-wrap:break-word;word-break:break-word;}
+img,svg{max-width:100%;height:auto;}
+h1,h2,h3,.serif,.kpi-value,td.n{font-family:Georgia,'Times New Roman',serif;}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px;}
+.nav{position:fixed;top:0;left:0;right:0;z-index:9999;background:rgba(248,246,241,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;padding:13px 14px;gap:8px;}
+.nav-left{font-family:Georgia,serif;font-weight:700;font-size:clamp(13px,4.6vw,19px);letter-spacing:.8px;color:var(--forest);flex:1 1 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.nav-right{font-size:10px;color:var(--slate);text-align:right;line-height:1.5;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.hero{padding:104px 0 46px;background:radial-gradient(ellipse 900px 500px at 12% -10%,rgba(227,196,121,.10),transparent 60%),radial-gradient(ellipse 700px 420px at 100% 0,rgba(22,106,82,.35),transparent 55%),linear-gradient(160deg,var(--forest) 0%,var(--forest-mid) 120%);}
+.hero-eyebrow{color:var(--gold-onDark);font-size:12px;letter-spacing:3px;font-weight:700;text-transform:uppercase;margin-bottom:12px;}
+.hero-title{font-size:clamp(28px,6.4vw,48px);font-weight:600;line-height:1.1;color:var(--onDark);max-width:820px;}
+.hero-title em{font-style:italic;color:var(--gold-onDark);}
+.hero-sub{color:var(--onDark-mid);font-size:15px;margin-top:14px;max-width:660px;}
+.hero-tagline{color:var(--gold-onDark);font-size:12.5px;letter-spacing:1px;margin-top:16px;font-weight:600;}
+section{padding:40px 0 4px;}
+.section-label{font-size:11px;letter-spacing:3px;color:var(--gold-light);font-weight:700;text-transform:uppercase;margin-bottom:8px;}
+.section-title{font-size:clamp(22px,5vw,32px);font-weight:600;color:var(--forest);margin-bottom:10px;line-height:1.15;}
+.section-intro{font-size:13.5px;color:var(--platinum);max-width:720px;margin-bottom:18px;}
+.hairline{height:1px;background:linear-gradient(90deg,rgba(184,134,58,.45),transparent);margin:8px 0 22px;}
+.kpi-ribbon{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;border:1px solid var(--border);border-radius:10px;overflow:hidden;background:var(--border-soft);}
+.kpi-cell{background:var(--card);padding:18px 14px;}
+.kpi-label{font-size:9.5px;letter-spacing:1.5px;color:var(--slate);text-transform:uppercase;margin-bottom:6px;}
+.kpi-value{font-size:clamp(15px,3.8vw,21px);color:var(--forest);font-weight:700;}
+.kpi-note{font-size:10.5px;color:var(--slate);margin-top:3px;}
+@media(min-width:520px){.kpi-ribbon{grid-template-columns:repeat(4,1fr);}}
+.table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:10px;background:var(--card);box-shadow:0 2px 14px rgba(21,36,26,.04);-webkit-overflow-scrolling:touch;}
+table{border-collapse:collapse;width:100%;min-width:640px;}
+thead th{background:var(--forest);color:var(--onDark);padding:12px 14px;font-size:10.5px;letter-spacing:.6px;text-align:left;white-space:nowrap;}
+tbody td{padding:11px 14px;font-size:12.5px;border-top:1px solid var(--border-soft);white-space:nowrap;}
+tbody tr:nth-child(even) td{background:rgba(241,235,219,.35);}
+td.n{font-weight:700;color:var(--forest);}
+td.wrapt{white-space:normal;min-width:200px;}
+td:first-child{font-weight:600;color:var(--forest);}
+.tag{display:inline-block;font-size:10px;font-weight:700;padding:3px 9px;border-radius:12px;letter-spacing:.4px;}
+.tag-ver{background:rgba(26,122,82,.12);color:var(--green-light);}
+.tag-part{background:rgba(184,134,58,.16);color:var(--gold-light);}
+.tag-ask{background:rgba(178,58,36,.10);color:#a3341f;}
+.tag-stat{background:rgba(22,106,82,.12);color:var(--teal);}
+@media(max-width:480px){table{min-width:560px;}thead th{padding:10px;font-size:9.5px;}tbody td{padding:9px 10px;font-size:11.5px;}}
+.swipe{font-size:10.5px;color:var(--slate);text-align:center;margin-top:8px;}
+.two-col{display:grid;gap:18px;}
+@media(min-width:700px){.two-col{grid-template-columns:1fr 1fr;}}
+.callout{border-radius:8px;padding:18px 20px;margin:18px 0;border-left:3px solid var(--gold);background:var(--card);box-shadow:0 1px 2px rgba(21,36,26,.03);}
+.callout-teal{border-color:var(--teal);}
+.callout-red{border-color:var(--red-flag);}
+.callout-title{font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;margin-bottom:8px;color:var(--gold-light);}
+.callout-teal .callout-title{color:var(--teal);}
+.callout-red .callout-title{color:var(--red-flag);}
+.callout-body{font-size:13.5px;color:var(--platinum);line-height:1.75;}
+.callout-body li{margin-left:18px;margin-bottom:4px;}
+.bar-row{display:grid;grid-template-columns:minmax(80px,120px) 1fr minmax(72px,100px);align-items:center;gap:8px;margin-bottom:12px;}
+.bar-label{font-size:11px;color:var(--platinum);line-height:1.3;}
+.bar-track{height:10px;background:var(--bg-soft);border-radius:5px;overflow:hidden;}
+.bar-fill{height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));border-radius:5px;}
+.bar-fill.g{background:linear-gradient(90deg,var(--green),var(--green-light));}
+.bar-val{font-family:Georgia,serif;font-size:11px;color:var(--forest);text-align:right;line-height:1.3;}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;box-shadow:0 2px 14px rgba(21,36,26,.04);}
+.card h3{font-size:18px;color:var(--forest);margin-bottom:12px;}
+.contact-strip{background:var(--forest);padding:44px 0;margin-top:36px;}
+.contact-grid{display:grid;gap:18px;align-items:center;}
+@media(min-width:640px){.contact-grid{grid-template-columns:repeat(3,1fr);}}
+.contact-name{font-size:16px;font-weight:700;color:var(--onDark);}
+.contact-role,.contact-line{color:var(--onDark-mid);font-size:13px;}
+.wordmark{font-family:Georgia,serif;font-size:22px;color:var(--gold-onDark);letter-spacing:2px;}
+.link-btn{display:block;text-decoration:none;border:1px solid rgba(227,196,121,.55);border-radius:8px;padding:12px 16px;margin-top:12px;color:var(--gold-onDark);font-size:13px;font-weight:700;transition:background .2s,border-color .2s;}
+.link-btn:hover{background:rgba(227,196,121,.08);border-color:var(--gold-onDark);}
+.disclaimer{font-size:9.5px;color:var(--slate);text-align:center;padding:26px 18px 50px;max-width:760px;margin:0 auto;line-height:1.8;}
+</style>
+</head>
+<body>
+
+<div class="nav"><div class="nav-left">JOE COLLECTION</div><div class="nav-right">JOE · +66 80-657-8387<br>joecollection.m@gmail.com</div></div>
+
+<header class="hero"><div class="wrap">
+<div class="hero-eyebrow">Market Intelligence · Phuket, Thailand</div>
+<h1 class="hero-title">Phuket Hotel &amp; Real Estate <em>Transaction Database</em> — Oct 2023 to Oct 2026</h1>
+<p class="hero-sub">A source-graded evidence base for family offices, HNW and institutional investors. Every figure carries a confidence grade; asking prices are never presented as transactions.</p>
+<p class="hero-tagline">JOE COLLECTION · Premium Hospitality &amp; Real Estate Assets</p>
+</div></header>
+
+<main class="wrap">
+
+<section>
+<div class="section-label">Snapshot</div>
+<h2 class="section-title">Phuket at a glance</h2>
+<div class="hairline"></div>
+<div class="kpi-ribbon">
+<div class="kpi-cell"><div class="kpi-label">Hotel deals 2010–23</div><div class="kpi-value">29</div><div class="kpi-note">JLL, ฿30.8bn total</div></div>
+<div class="kpi-cell"><div class="kpi-label">Avg deal size</div><div class="kpi-value">฿1.06bn</div><div class="kpi-note">20% of Thai volume</div></div>
+<div class="kpi-cell"><div class="kpi-label">2025 ADR / Occ.</div><div class="kpi-value">+5% / −6%</div><div class="kpi-note">C9 Hotelworks</div></div>
+<div class="kpi-cell"><div class="kpi-label">2025 arrivals</div><div class="kpi-value">8.8M</div><div class="kpi-note">Chinese −44%</div></div>
+<div class="kpi-cell"><div class="kpi-label">1H25 occupancy</div><div class="kpi-value">79.5%</div><div class="kpi-note">Knight Frank</div></div>
+<div class="kpi-cell"><div class="kpi-label">Hotel pipeline</div><div class="kpi-value">41 / 8,000+</div><div class="kpi-note">projects / keys 2026–30</div></div>
+<div class="kpi-cell"><div class="kpi-label">Condo avg 2025</div><div class="kpi-value">฿149,070</div><div class="kpi-note">per m², Colliers</div></div>
+<div class="kpi-cell"><div class="kpi-label">Condo units sold</div><div class="kpi-value">8,372</div><div class="kpi-note">vs 7,636 launched</div></div>
+</div>
+</section>
+
+<section>
+<div class="section-label">Table 1</div>
+<h2 class="section-title">Hotel transactions with confirmed closing</h2>
+<p class="section-intro">Only deals with a named buyer or seller and a published source are listed. Price fields stay blank where the parties did not disclose them.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Asset</th><th>Keys</th><th>Seller</th><th>Buyer</th><th>Reported value</th><th>Price / key</th><th>Reported</th><th>Grade</th></tr></thead>
+<tbody>
+<tr><td>ibis Phuket Kata</td><td class="n">258</td><td>Origin Hotel (with Tokyu Land Asia)</td><td>Not disclosed</td><td class="n">&gt; ฿400M cash received</td><td class="n">≈ ฿1.55M+ (indicative)</td><td>Jun 2026</td><td><span class="tag tag-part">Partial</span></td></tr>
+<tr><td>Hilton Garden Inn Phuket Bang Tao</td><td class="n">177</td><td>GCP Hospitality (Gaw Capital)</td><td>TriO Capital</td><td>Not disclosed</td><td>n/a</td><td>JLL-managed deal</td><td><span class="tag tag-part">Partial</span></td></tr>
+</tbody></table></div>
+<div class="swipe">← swipe to view full table →</div>
+<div class="callout"><div class="callout-title">How to read this table</div><div class="callout-body">The ibis Kata figure is the cash the seller reported receiving, not a confirmed gross price. The ฿/key value is our own indicative arithmetic (฿400M ÷ 258 keys) and should be treated as a floor, not a comparable.</div></div>
+</section>
+
+<section>
+<div class="section-label">Table 2</div>
+<h2 class="section-title">Capital-markets volume</h2>
+<div class="hairline"></div>
+<div class="two-col">
+<div class="table-wrap"><table style="min-width:300px">
+<thead><tr><th>Thailand hotel volume</th><th>฿ bn</th></tr></thead>
+<tbody>
+<tr><td>2022</td><td class="n">11.8</td></tr>
+<tr><td>2023</td><td class="n">4.2</td></tr>
+<tr><td>2024 (JLL forecast)</td><td class="n">9.0</td></tr>
+<tr><td>2024 (JLL-reported, 15 hotels)</td><td class="n">≈ 22</td></tr>
+</tbody></table></div>
+<div class="card"><h3>Phuket share, 2010–2023</h3>
+<div class="bar-row"><div class="bar-label">Bangkok</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">฿63.2bn · 42%</div></div>
+<div class="bar-row"><div class="bar-label">Phuket</div><div class="bar-track"><div class="bar-fill g" style="width:49%"></div></div><div class="bar-val">฿30.8bn · 20%</div></div>
+<div class="bar-row"><div class="bar-label">Samui</div><div class="bar-track"><div class="bar-fill" style="width:16%"></div></div><div class="bar-val">฿9.8bn · 7%</div></div>
+<div class="bar-row"><div class="bar-label">Pattaya</div><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div><div class="bar-val">฿7.3bn · 5%</div></div>
+</div></div>
+<div class="swipe">Source: JLL Hotels &amp; Hospitality (Jan 2024; Feb 2025). 2024 split: about half Bangkok, then Phuket and Chiang Mai.</div>
+</section>
+
+<section>
+<div class="section-label">Table 3</div>
+<h2 class="section-title">Phuket trading performance</h2>
+<div class="hairline"></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Submarket (2025 vs 2024)</th><th>Segment</th><th>ADR change</th><th>Occupancy change</th><th>Read-through</th></tr></thead>
+<tbody>
+<tr><td>Island-wide</td><td>All</td><td class="n">+5%</td><td class="n">−6%</td><td class="wrapt">Rate held by accepting emptier rooms</td></tr>
+<tr><td>Surin</td><td>Luxury</td><td class="n">+21%</td><td class="n">−9%</td><td class="wrapt">Strong pricing power, costlier trade</td></tr>
+<tr><td>Bang Tao</td><td>Upscale</td><td class="n">+20%</td><td class="n">−2%</td><td class="wrapt">Strongest rate/occupancy pairing</td></tr>
+<tr><td>Kamala</td><td>Upscale</td><td>n/d</td><td class="n">−24%</td><td class="wrapt">Weakest occupancy trend</td></tr>
+<tr><td>Patong</td><td>Mass / budget</td><td>n/d</td><td class="n">−8%</td><td class="wrapt">Volume segment under pressure</td></tr>
+</tbody></table></div>
+<div class="swipe">← swipe → Source: C9 Hotelworks Phuket Update 2026 (full-year 2025)</div>
+</section>
+
+<section>
+<div class="section-label">Table 4</div>
+<h2 class="section-title">Land and residential benchmarks</h2>
+<p class="section-intro">Indicative land values and condominium pricing. These are market benchmarks, not individual closed land sales.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Benchmark</th><th>Range / value</th><th>Basis</th><th>Source</th><th>Grade</th></tr></thead>
+<tbody>
+<tr><td>Land — Mueang Phuket</td><td class="n">฿10–20M / rai</td><td>Indicative 2025</td><td>Colliers</td><td><span class="tag tag-stat">Benchmark</span></td></tr>
+<tr><td>Land — Kamala</td><td class="n">฿40–100M / rai</td><td>Indicative 2025</td><td>Colliers</td><td><span class="tag tag-stat">Benchmark</span></td></tr>
+<tr><td>Condo average price</td><td class="n">฿149,070 / m²</td><td>2025; ฿150,000 forecast 2026</td><td>Colliers</td><td><span class="tag tag-stat">Benchmark</span></td></tr>
+<tr><td>Condo absorption</td><td class="n">8,372 sold / 7,636 launched</td><td>2025</td><td>Colliers</td><td><span class="tag tag-stat">Benchmark</span></td></tr>
+<tr><td>Laem Nga 78-rai parcel</td><td class="n">฿22M / rai (≈ ฿1.73bn)</td><td>Listing price</td><td>Agent portal</td><td><span class="tag tag-ask">Asking only</span></td></tr>
+</tbody></table></div>
+<div class="swipe">← swipe to view full table →</div>
+</section>
+
+<section>
+<div class="section-label">Reading guide</div>
+<h2 class="section-title">Evidence grades and known gaps</h2>
+<div class="hairline"></div>
+<div class="two-col">
+<div class="callout callout-teal"><div class="callout-title">Grades</div><div class="callout-body">
+<p><span class="tag tag-ver">Verified</span> named parties, published price</p><br>
+<p><span class="tag tag-part">Partial</span> deal confirmed, price incomplete</p><br>
+<p><span class="tag tag-stat">Benchmark</span> published market statistic</p><br>
+<p><span class="tag tag-ask">Asking only</span> never used as a comparable</p></div></div>
+<div class="callout callout-red"><div class="callout-title">Known gaps</div><div class="callout-body"><ul>
+<li>Few Phuket hotel sales publish a price; many are off-market.</li>
+<li>Land-office transfer values often differ from true prices.</li>
+<li>No verified closed land sale is listed here yet.</li>
+<li>Buyer identity is missing for the ibis Kata sale.</li></ul></div></div>
+</div>
+<div class="callout"><div class="callout-title">Next data layer</div><div class="callout-body">Stock Exchange of Thailand filings from listed owners, plus JLL, C9 and Colliers capital-markets transaction lists, will add priced deals and strengthen the comparable set before client presentation.</div></div>
+</section>
+
+</main>
+
+<div class="contact-strip"><div class="wrap"><div class="contact-grid">
+<div><div class="contact-name">Monthon Mahakijdumrongnukul</div><div class="contact-role">Advisor · JOE COLLECTION</div></div>
+<div><div class="contact-line">+66 80-657-8387</div><div class="contact-line">joecollection.m@gmail.com</div></div>
+<div class="wordmark">JOE COLLECTION</div>
+</div>
+<a class="link-btn" href="https://joecollection.github.io/joecollection-portfolio/" target="_blank" rel="noopener">Full Investment &amp; Asset Analysis <span>→</span></a>
+<a class="link-btn" href="https://joecollection.github.io/asset/" target="_blank" rel="noopener">Explore More Premium Assets <span>→</span></a>
+</div></div>
+
+<div class="disclaimer">Confidential. Prepared for qualified investors only. Sources: JLL Hotels &amp; Hospitality, C9 Hotelworks, Knight Frank, Colliers, DFDL, Thailand Hotel News. Figures are indicative, based on publicly available data, and have not been independently audited. Price per key for ibis Phuket Kata is an indicative calculation from reported cash proceeds. Asking prices are shown for reference only and are not transactions. This document is not a forecast or guarantee of returns and contains forward-looking statements. Data as at October 2026.</div>
+
+</body>
+</html>
