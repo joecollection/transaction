@@ -75,6 +75,15 @@ td:first-child{font-weight:600;color:var(--forest);}
 .link-btn{display:block;text-decoration:none;border:1px solid rgba(227,196,121,.55);border-radius:8px;padding:12px 16px;margin-top:12px;color:var(--gold-onDark);font-size:13px;font-weight:700;transition:background .2s,border-color .2s;}
 .link-btn:hover{background:rgba(227,196,121,.08);border-color:var(--gold-onDark);}
 .disclaimer{font-size:9.5px;color:var(--slate);text-align:center;padding:26px 18px 50px;max-width:760px;margin:0 auto;line-height:1.8;}
+.wide{min-width:900px;}
+.takeaways{display:grid;gap:12px;margin-bottom:20px;}
+@media(min-width:700px){.takeaways{grid-template-columns:repeat(3,1fr);}}
+.tk{background:var(--card);border:1px solid var(--border);border-top:3px solid var(--gold);border-radius:10px;padding:16px 18px;}
+.tk-k{font-size:9.5px;letter-spacing:1.4px;color:var(--slate);text-transform:uppercase;margin-bottom:6px;}
+.tk-v{font-family:Georgia,serif;font-size:22px;font-weight:700;color:var(--forest);line-height:1.15;}
+.tk-t{font-size:12px;color:var(--platinum);margin-top:6px;line-height:1.55;}
+.yr{display:inline-block;font-family:Georgia,serif;font-weight:700;color:var(--gold-light);}
+td.note{white-space:normal;min-width:230px;font-size:11.5px;color:var(--platinum);}
 </style>
 </head>
 <body>
@@ -130,8 +139,9 @@ td:first-child{font-weight:600;color:var(--forest);}
 <tbody>
 <tr><td>2022</td><td class="n">11.8</td></tr>
 <tr><td>2023</td><td class="n">4.2</td></tr>
-<tr><td>2024 (JLL forecast)</td><td class="n">9.0</td></tr>
-<tr><td>2024 (JLL-reported, 15 hotels)</td><td class="n">≈ 22</td></tr>
+<tr><td>2024 (JLL, revised)</td><td class="n">25.1</td></tr>
+<tr><td>2025 (record, 18 deals)</td><td class="n">26.4</td></tr>
+<tr><td>2026 (JLL forecast)</td><td class="n">≈ 13</td></tr>
 </tbody></table></div>
 <div class="card"><h3>Phuket share, 2010–2023</h3>
 <div class="bar-row"><div class="bar-label">Bangkok</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-val">฿63.2bn · 42%</div></div>
@@ -139,7 +149,7 @@ td:first-child{font-weight:600;color:var(--forest);}
 <div class="bar-row"><div class="bar-label">Samui</div><div class="bar-track"><div class="bar-fill" style="width:16%"></div></div><div class="bar-val">฿9.8bn · 7%</div></div>
 <div class="bar-row"><div class="bar-label">Pattaya</div><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div><div class="bar-val">฿7.3bn · 5%</div></div>
 </div></div>
-<div class="swipe">Source: JLL Hotels &amp; Hospitality (Jan 2024; Feb 2025). 2024 split: about half Bangkok, then Phuket and Chiang Mai.</div>
+<div class="swipe">Source: JLL Hotels &amp; Hospitality (Jan 2024; Thailand Tourism Forum, Jan 2026). 2024 now reported at ฿25.1bn; Bangkok took almost 80% of 2025 transactions.</div>
 </section>
 
 <section>
@@ -165,9 +175,9 @@ td:first-child{font-weight:600;color:var(--forest);}
 <div class="table-wrap"><table>
 <thead><tr><th>Location</th><th>Land area</th><th>Sold price</th><th>฿ / sq wah</th><th>฿ / rai</th><th>฿ / m²</th><th>Year</th><th>Grade</th></tr></thead>
 <tbody>
-<tr><td>Beach Road, Patong</td><td class="n">427 sq wah (≈ 1.07 rai)</td><td class="n">฿470M</td><td class="n">฿1.10M</td><td class="n">฿440M</td><td class="n">฿275,000</td><td>2024</td><td><span class="tag tag-part">Indian Investor</span></td></tr>
-<tr><td>Beach Road, Patong</td><td class="n">2.5 rai</td><td class="n">฿868M</td><td class="n">฿0.87M</td><td class="n">฿347M</td><td class="n">฿217,000</td><td>2024</td><td><span class="tag tag-part">Indian Investor</span></td></tr>
-<tr><td>Beachfront, Patong</td><td class="n">2 rai</td><td class="n">฿500M</td><td class="n">฿0.63M</td><td class="n">฿250M</td><td class="n">฿156,000</td><td>2024</td><td><span class="tag tag-part">Barracuda Beach Club</span></td></tr>
+<tr><td>Beach Road, Patong</td><td class="n">427 sq wah (≈ 1.07 rai)</td><td class="n">฿470M</td><td class="n">฿1.10M</td><td class="n">฿440M</td><td class="n">฿275,000</td><td>2024</td><td><span class="tag tag-part">Broker-reported</span></td></tr>
+<tr><td>Beach Road, Patong</td><td class="n">2.5 rai</td><td class="n">฿868M</td><td class="n">฿0.87M</td><td class="n">฿347M</td><td class="n">฿217,000</td><td>2024</td><td><span class="tag tag-part">Broker-reported</span></td></tr>
+<tr><td>Beachfront, Patong</td><td class="n">2 rai</td><td class="n">฿500M</td><td class="n">฿0.63M</td><td class="n">฿250M</td><td class="n">฿156,000</td><td>2024</td><td><span class="tag tag-part">Broker-reported</span></td></tr>
 </tbody></table></div>
 <div class="swipe">← swipe to view full table →</div>
 <div class="callout"><div class="callout-title">Reading the range</div><div class="callout-body">The three sales span about ฿250M to ฿440M per rai. That is well above Colliers' ฿40–100M per rai band for Kamala in Table 5, so the Patong beachfront evidence should be presented as its own prime-frontage tier, not blended into island averages. Values per rai differ by parcel size and frontage; the smaller Beach Road plot carries the highest rate.</div></div>
@@ -190,6 +200,30 @@ td:first-child{font-weight:600;color:var(--forest);}
 </section>
 
 <section>
+<div class="section-label">Table 6</div>
+<h2 class="section-title">Market evidence register, 2025–2026</h2>
+<p class="section-intro">Aggregate deal data and price benchmarks supplied for this database, each cross-checked against public sources where possible. The status column shows what we could and could not confirm.</p>
+<div class="takeaways">
+<div class="tk"><div class="tk-k">Thailand hotel volume 2025</div><div class="tk-v">฿26.4bn</div><div class="tk-t">A record year across 18 deals, averaging ฿1.5bn each. JLL expects about ฿13bn in 2026.</div></div>
+<div class="tk"><div class="tk-k">Where the capital went</div><div class="tk-v">≈ 80% Bangkok</div><div class="tk-t">Phuket traded thinly in 2025, so public price evidence is scarce and each deal carries weight.</div></div>
+<div class="tk"><div class="tk-k">Residential price levels</div><div class="tk-v">฿70–149k / m²</div><div class="tk-t">Landed median around ฿70k and condominium ฿144–149k per m², depending on source and measure.</div></div>
+</div>
+<div class="table-wrap"><table class="wide">
+<thead><tr><th>Year</th><th>Asset class</th><th>Location</th><th>Type</th><th>Value (THB)</th><th>Metric</th><th>Buyer profile</th><th>Source</th><th>Status</th><th>Verification note</th></tr></thead>
+<tbody>
+
+<tr><td><span class="yr">2026</span></td><td>Retail-attraction / mixed-use</td><td>Thalang, Phuket (Synthesis Ark, 500+ rai)</td><td>Development investment (not a sale)</td><td class="n">฿10bn (within ฿50bn masterplan)</td><td>12 attractions; 80–100k visitors/day; opens 2029</td><td>Siam Piwat, with CV Group</td><td>Siam Piwat release, 5 Oct 2026</td><td><span class="tag tag-ver">Verified</span></td><td class="note">ICONPHUKET is a company-announced investment and a demand catalyst, not a transaction. Masterplan phase 1 is due by 2032.</td></tr>
+<tr><td><span class="yr">2026</span></td><td>Villa (primary)</td><td>West Coast (central)</td><td>New-launch development</td><td class="n">฿15–35M per unit</td><td>224 units, 16 projects</td><td>Various HNW</td><td>CBRE H1 2026</td><td><span class="tag tag-part">Client-supplied</span></td><td class="note">Launch price range, not closed sales. Obtain the CBRE report page before quoting.</td></tr>
+<tr><td><span class="yr">2025</span></td><td>Hotel (luxury)</td><td>Phuket (prime)</td><td>Asset acquisition</td><td class="n">≈ ฿2.2bn</td><td>n/a</td><td>Foreign institution</td><td>JLL Capital Markets</td><td><span class="tag tag-ask">Verified</span></td><td class="note">JLL's published ฿2.2bn figure covers Thailand luxury hotel deals, with the currency unit unclear. A single Phuket asset is not confirmed.</td></tr>
+<tr><td><span class="yr">2025</span></td><td>Hotel (aggregate)</td><td>Thailand (incl. Phuket)</td><td>Asset acquisition</td><td class="n">฿26.4bn</td><td>18 deals</td><td>Mixed</td><td>JLL (record high)</td><td><span class="tag tag-ver">Verified</span></td><td class="note">Confirmed by JLL at Thailand Tourism Forum 2026; up from ฿25.1bn in 2024.</td></tr>
+<tr><td><span class="yr">2025</span></td><td>Condominium</td><td>Phuket (overall)</td><td>Retail / bulk buy</td><td class="n">฿144,000 / m²</td><td>Median price</td><td>Mixed</td><td>C9 Hotelworks</td><td><span class="tag tag-stat">Consistent</span></td><td class="note">In line with Colliers' ฿149,070 / m² average for 2025; the two use different measures.</td></tr>
+<tr><td><span class="yr">2025</span></td><td>Landed property</td><td>Phuket (overall)</td><td>Retail / developer buy</td><td class="n">฿70,000 / m²</td><td>Median price</td><td>Mixed</td><td>C9 Hotelworks</td><td><span class="tag tag-part">Client-supplied</span></td><td class="note">Similar to a villa median cited from Knight Frank elsewhere. Confirm the originating publisher.</td></tr>
+</tbody></table></div>
+<div class="swipe">← swipe to view the full register →</div>
+<div class="callout callout-red"><div class="callout-title">Use with care</div><div class="callout-body">Two of the seven lines could not be reconciled with public sources. Present Verified and Consistent lines as evidence; present Client-supplied lines as indicative; hold back Needs-review lines until the underlying document is in hand.</div></div>
+</section>
+
+<section>
 <div class="section-label">Reading guide</div>
 <h2 class="section-title">Evidence grades and known gaps</h2>
 <div class="hairline"></div>
@@ -198,13 +232,17 @@ td:first-child{font-weight:600;color:var(--forest);}
 <p><span class="tag tag-ver">Verified</span> named parties, published price</p><br>
 <p><span class="tag tag-part">Partial</span> deal confirmed, price incomplete</p><br>
 <p><span class="tag tag-part">Broker-reported</span> closed sale supplied by Joe Collection, pending documents</p><br>
-<p><span class="tag tag-stat">Benchmark</span> published market statistic</p><br>
+<p><span class="tag tag-ver">Verified</span> confirmed in a published source</p><br>
+<p><span class="tag tag-stat">Benchmark / Consistent</span> published statistic, or matches one</p><br>
+<p><span class="tag tag-part">Client-supplied</span> provided, not yet confirmed</p><br>
+<p><span class="tag tag-ask">Needs review</span> conflicts with public data</p><br>
 <p><span class="tag tag-ask">Asking only</span> never used as a comparable</p></div></div>
 <div class="callout callout-red"><div class="callout-title">Known gaps</div><div class="callout-body"><ul>
 <li>Few Phuket hotel sales publish a price; many are off-market.</li>
 <li>Land-office transfer values often differ from true prices.</li>
 <li>Patong land sales in Table 4 are broker-reported and not yet matched to transfer documents.</li>
-<li>Buyer identity is missing for the ibis Kata sale.</li></ul></div></div>
+<li>Buyer identity is missing for the ibis Kata sale.</li>
+<li>Two Table 6 lines (ORI portfolio, Phuket luxury hotel) need source documents.</li></ul></div></div>
 </div>
 <div class="callout"><div class="callout-title">Next data layer</div><div class="callout-body">Stock Exchange of Thailand filings from listed owners, plus JLL, C9 and Colliers capital-markets transaction lists, will add priced deals and strengthen the comparable set before client presentation.</div></div>
 </section>
@@ -220,7 +258,7 @@ td:first-child{font-weight:600;color:var(--forest);}
 <a class="link-btn" href="https://joecollection.github.io/asset/" target="_blank" rel="noopener">Explore More Premium Assets <span>→</span></a>
 </div></div>
 
-<div class="disclaimer">Confidential. Prepared for qualified investors only. Sources: JLL Hotels &amp; Hospitality, C9 Hotelworks, Knight Frank, Colliers, DFDL, Thailand Hotel News. Figures are indicative, based on publicly available data, and have not been independently audited. Price per key for ibis Phuket Kata is an indicative calculation from reported cash proceeds. Patong land transactions were supplied by the advisor and are unverified against land-office transfer records; per-sq-wah, per-rai and per-m² values are calculated. Asking prices are shown for reference only and are not transactions. This document is not a forecast or guarantee of returns and contains forward-looking statements. Data as at October 2026.</div>
+<div class="disclaimer">Confidential. Prepared for qualified investors only. Sources: JLL Hotels &amp; Hospitality, TTG Asia, C9 Hotelworks, Knight Frank, Colliers, DFDL, Thailand Hotel News. Figures are indicative, based on publicly available data, and have not been independently audited. Price per key for ibis Phuket Kata is an indicative calculation from reported cash proceeds. Patong land transactions were supplied by the advisor and are unverified against land-office transfer records; per-sq-wah, per-rai and per-m² values are calculated. Table 6 lines marked Client-supplied or Needs review have not been confirmed against primary documents. Asking prices are shown for reference only and are not transactions. This document is not a forecast or guarantee of returns and contains forward-looking statements. Data as at October 2026.</div>
 
 </body>
 </html>
